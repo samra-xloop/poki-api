@@ -17,7 +17,7 @@ export default function Card({pokiInfo}) {
           <ui>
           <li>
               <span>Abilities</span>
-              <span>{pokiInfo.abilities[0].ability.name}</span>
+              <span>{pokiInfo.abilities[0]? pokiInfo.abilities[0].ability.name: "no ability"}</span>
             </li>
             <li>
               <span>Weight</span>
